@@ -42,9 +42,13 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+                <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                    <button class="btn btn-block bg-warning pr-10 pl-10" onclick="window.scroll({top: 2000,left: 0,behavior: 'smooth'});">Reserve Table</button>
+                </div>
+                
             </div>
         </div>
     </header>
@@ -56,9 +60,11 @@
             </div>
             <div class="col col-sm col-md order-sm-first">
                 <div class="media">
-                    <img src="img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="uthappizza">
+                    <div class="media-left">
+                        <img src="img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center" alt="uthappizza">
+                    </div>
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza</h2>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>  
                     </div>
                 </div>
@@ -71,8 +77,16 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <div class="media-right">
+                        <img src="img/buffet.png" alt="buffet" class="d-flex mr-3 align-self-center img-thumbnail">
+                    </div>
+                </div>
+                
             </div>
         </div>
 
@@ -82,7 +96,9 @@
             </div>
             <div class="col col-sm col-md order-sm-first">
                 <div class="media">
-                    <img src="img/alberto.png" alt="alberto" class="d-flex mr-3 align-self-center">
+                    <div class="media-left">
+                        <img src="img/alberto.png" alt="alberto" class="d-flex mr-3 align-self-center">
+                    </div>
                     <div class="media-body">
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
@@ -90,6 +106,62 @@
                     </div>
                 </div>
                 
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-8 align-self-center offset-sm-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3> 
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-2">Number of guests</div>
+
+                                <div class="col-1">
+                                    <input type="radio" name="one" id="one">
+                                    <label for="one">1</label>
+                                </div>
+                                <div class="col-1">
+                                    <input type="radio" name="two" id="two">
+                                    <label for="two">2</label>
+                                </div>
+                                <div class="col-1">
+                                    <input type="radio" name="three" id="three">
+                                    <label for="three">3</label>
+                                </div>
+                                <div class="col-1">
+                                    <input type="radio" name="four" id="four">
+                                    <label for="four">4</label>
+                                </div>
+                                <div class="col-1">
+                                    <input type="radio" name="five" id="five">
+                                    <label for="five">5</label>
+                                </div>
+                                <div class="col-1">
+                                    <input type="radio" name="six" id="six">
+                                    <label for="six">6</label>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-2">Date and Time</div>
+                                <div class="col-12 col-sm-5">
+                                    <input type="text" name="date" placeholder="Date">
+                                </div>
+                                <div class="col-12 col-sm-5">
+                                    <input type="text" name="time" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-10 offset-sm-2">
+                                    <button class="btn btn-primary" type="submit">Reserve</button>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </div>
